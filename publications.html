@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang=en>
+<title>ENIGMA-DISK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-red.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118863115-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118863115-5');
+</script>
+
+<head>
+  <style>
+    h2 {
+      color:goldenrod
+    }
+
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:white;
+      color:black;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="w3-container w3-theme-d5 w3-padding" id="topMenu"> 
+    <div class="w3-container">
+      <div class=" w3-container">
+        <h2><img src="images/Logo.png" alt="ENIGMA-DISK"/>
+          ENIGMA-DISK
+        </h2>
+      </div>
+    </div>  
+    
+    <div class="w3-right">
+      <div class="w3-bar w3-theme-d5">
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-8">About</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-8">Research</a>
+        <a href="people.html" class="w3-bar-item w3-button w3-padding-8">People</a>
+        <a href="publications.html" class="w3-bar-item w3-button w3-padding-8 selected">Publications</a>
+        <a href="software.html" class="w3-bar-item w3-button w3-padding-8">Software</a>
+      </div>  
+    </div>
+  </header>
+
+  <br />
+  <div class="w3-center">
+      <h3>Publications</h3>
+  </div>
+  <br />
+
+  <div class="w3-content w3-justify">
+    <p>
+      Publications Here
+    </p>
+  </div>
+
+
+  <div class="footer">
+    <hr />
+    <p>Copyright ENIGMA-DISK 2021 | University of Southern California</p>
+  </div>
+
+
+</body>
+
+</html>
