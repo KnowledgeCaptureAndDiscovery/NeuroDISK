@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang=en>
-<title>DISK: Automated DIscovery of Scientific Knowledge</title>
+<title>ENIGMA-DISK</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/w3-theme-brown.css">
+<link rel="stylesheet" href="css/w3-theme-red.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -24,41 +24,60 @@ $(document).ready(function(){
   gtag('config', 'UA-118863115-5');
 </script>
 
+<head>
+  <style>
+    h2 {
+      color:goldenrod
+    }
+
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:white;
+      color:black;
+      text-align: center;
+    }
+  </style>
+</head>
+
 <body>
 
-<header class="w3-container w3-theme w3-padding w3-center" id="topMenu"> 
-<div class="w3-container">
-    <div class=" w3-container">
-      <h2><img src="images/LogoWithNameSmall.png" alt="DISK"/>
-        DISK: Automated DIscovery of Scientific Knowledge</h2>
-    </div>
-</div>  
-  
-<div class="w3-center">
-    <div class="w3-bar w3-theme">
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-8 selected">Home</a>
-      <a href="portal.html" class="w3-bar-item w3-button w3-padding-8">Portal</a>
-      <a href="about.html" class="w3-bar-item w3-button w3-padding-8">About</a>
-      <a href="people.html" class="w3-bar-item w3-button w3-padding-8">People</a>
-      <a href="papers.html" class="w3-bar-item w3-button w3-padding-8">Papers</a>
-      <a href="sponsors.html" class="w3-bar-item w3-button w3-padding-8">Sponsors</a>
+  <header class="w3-container w3-theme-d5 w3-padding" id="topMenu"> 
+    <div class="w3-container">
+      <div class=" w3-container">
+        <h2><img src="images/Logo.png" alt="ENIGMA-DISK"/>
+          ENIGMA-DISK
+        </h2>
+      </div>
     </div>  
-</div>
-</header>
+    
+    <div class="w3-right">
+      <div class="w3-bar w3-theme-d5">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-8 selected">Home</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-8">About</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-8">Research</a>
+        <a href="people.html" class="w3-bar-item w3-button w3-padding-8">People</a>
+        <a href="publications.html" class="w3-bar-item w3-button w3-padding-8">Publications</a>
+        <a href="software.html" class="w3-bar-item w3-button w3-padding-8">Software</a>
+      </div>  
+    </div>
+  </header>
 
 
-<div class="w3-content w3-justify">
-  <p>DISK is a novel framework to test and revise hypotheses based on automatic analysis of scientific data repositories that grow over time. Given an input hypothesis, DISK is able to search for appropriate data to test it and revise it accordingly, and does this continuously as new data be-comes available. DISK is also capable of triggering new kinds of analyses when new kinds of data become availa-ble. The provenance of the revised hypotheses is recorded, with all the details of the analyses. We are using DISK with multi-omics data from a seminal cancer study. Ongoing research includes extending DISK to generate interactive explanations for scientists based on provenance records, developing a general approach to the design of meta-workflows, handling more complex hypotheses, and exploring the use of this approach in other areas of science.
-</p>
-  <h2>Portal</h2>
-  <p>The DISK portal allows users to state a hypothesis and allow DISK to gather evidence for or against it based on analyzing data in a repository.  A login is required to access the portal, please contact us to request access.</p>
+  <div class="w3-content w3-justify">
+    <p>
+      Project Summary Here
+    </p>
+  </div>
 
-<p>The <a href="http://www.wings-workflows.org/wings-omics-portal">Wings OMICS portal</a> contains multi-omics workflows used by DISK, modeled in the <a>WINGS workflow system</a>.</p>
-  <br/>
-</div>
-<!-- Footer (defined in footer.html)-->
-<footer class="w3-container w3-theme-dark w3-padding-16" id ="footerContent">
-</footer>
+
+  <div class="footer">
+    <hr />
+    <p>Copyright ENIGMA-DISK 2021 | University of Southern California</p>
+  </div>
+
 
 </body>
+
 </html>
