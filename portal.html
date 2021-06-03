@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/w3-theme-red.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -26,7 +27,7 @@ $(document).ready(function(){
 
 <head>
   <style>
-    h2 {
+    h1 {
       color:goldenrod
     }
 
@@ -38,6 +39,16 @@ $(document).ready(function(){
       position: absolute;
       top: 8px;
       right: 16px;
+    }
+
+    .topleft {
+      position: absolute;
+      top: -3px;
+      left: 15px;
+    }
+
+    .w3-bar .w3-button {
+    padding: 16px;
     }
 
     .footer {
@@ -56,12 +67,13 @@ $(document).ready(function(){
   <header class="w3-container w3-theme-d5 w3-padding" id="topMenu"> 
     <div class="w3-container">
       <div class=" w3-container">
-        <h2><img src="images/Logo.png" alt="ENIGMA-DISK"/>
-          ENIGMA-DISK
-        </h2>
+        <div class="topleft">
+          <h1><img src="images/Logo.png" alt="ENIGMA-DISK" width=40px height=40px/>
+            ENIGMA-DISK
+          </h1>
+        </div>
         <div class="topright">
-            <img src="images/usc.gif" alt="University of Southern California" width=100px height=100px/>
-          </div>
+            <img src="images/usc.gif" alt="University of Southern California" width=50px height=50px/>
       </div>
     </div>  
     
@@ -78,15 +90,54 @@ $(document).ready(function(){
 
     <br />
     <div class="w3-center">
-        <h3><b>Portal</b></h3>
+        <h2><b>Portal</b></h2>
     </div>
     <br />
 
     <div class="w3-content w3-justify">
-        <p>
-        Software Here
-        </p>
+      <div class="w3-row-padding" style="margin-top:40px">
+        <div class="w3-col s4 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/logo_disk.png" alt="DISK" style="height:100px"/>
+    
+            <div class="w3-container w3-center">
+              <h2>DISK</h2>
+              <p>Helping automate the discovery of scientific knowledge</p>
+              <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://disk-project.org/'"><i class="fa fa-search"></i> See more</button></p>
+            </div>
+    
+          </div>
+        </div>
+
+        <div class="w3-col s4 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/logo_wings.png" alt="WINGS" style="height:90px"/>
+
+            <div class="w3-container w3-center">
+              <h2>WINGS</h2>
+              <p>A semantic workflow system that assists scientists with the design of computational experiments</p>
+              <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://www.wings-workflows.org/'"><i class="fa fa-search"></i> See more</button></p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="w3-col s4 w3-margin-bottom">
+          <div class="w3-card w3-center">
+            <img src="images/logo_ods.png" alt="ODS" style="height:100px"/>
+
+            <div class="w3-container w3-center">
+              <h2>Organic Data Science</h2>
+              <p>Resolving science processes through an open framework that facilitates participation</p>
+              <p><button class="w3-button w3-light-grey w3-block" onclick="location.href='http://www.organicdatascience.org/'"><i class="fa fa-search"></i> See more</button></p>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
+    
 
 
   <div class="footer">

@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 <head>
   <style>
-    h2 {
+    h1 {
       color:goldenrod
     }
 
@@ -42,6 +42,16 @@ $(document).ready(function(){
       position: absolute;
       top: 8px;
       right: 16px;
+    }
+
+    .topleft {
+      position: absolute;
+      top: -3px;
+      left: 15px;
+    }
+
+    .w3-bar .w3-button {
+    padding: 16px;
     }
 
     .footer {
@@ -60,14 +70,15 @@ $(document).ready(function(){
   <header class="w3-container w3-theme-d5 w3-padding" id="topMenu"> 
     <div class="w3-container">
       <div class=" w3-container">
-        <h2><img src="images/Logo.png" alt="ENIGMA-DISK"/>
-          ENIGMA-DISK
-        </h2>
-        <div class="topright">
-            <img src="images/usc.gif" alt="University of Southern California" width=100px height=100px/>
-          </div>
+      <div class="topleft">
+          <h1><img src="images/Logo.png" alt="ENIGMA-DISK" width=40px height=40px/>
+              ENIGMA-DISK
+          </h1>
       </div>
-    </div>  
+      <div class="topright">
+          <img src="images/usc.gif" alt="University of Southern California" width=50px height=50px/>
+      </div>
+  </div> 
     
     <div class="w3-center">
       <div class="w3-bar w3-theme-d5">
@@ -82,9 +93,8 @@ $(document).ready(function(){
 
   <br />
   <div class="w3-center">
-      <h3><b>Publications</b></h3>
+      <h2><b>Publications</b></h2>
   </div>
-  <br />
 
   <div class="w3-content w3-justify">
     <h3><b>2020</b><hr /></h3>
@@ -94,9 +104,7 @@ $(document).ready(function(){
         <a href="https://science.sciencemag.org/content/sci/367/6484/eaay6690.full.pdf" target="_blank"><p style="color:blue;">(PDF)</p></a>
     </p>
     <br />
-  </div>
 
-  <div class="w3-content w3-justify">
     <h3><b>2019</b><hr /></h3>
     <p>
         <a href="https://bibbase.org/network/publication/garijo-fakhraei-ratnakar-yang-endrias-ma-wang-bornstein-etal-towardsautomatedhypothesistestinginneuroscience-2019" target="_blank"><b>Towards Automated Hypothesis Testing in Neuroscience.</b></a>
@@ -104,9 +112,7 @@ $(document).ready(function(){
         <a href="https://www.isi.edu/~gil/papers/garijo-et-al-dmah19.pdf" target="_blank"><p style="color:blue;">(PDF)</p></a>
     </p>
     <br />
-  </div>
 
-  <div class="w3-content w3-justify">
     <h3><b>2017</b><hr /></h3>
     <p>
         <a href="https://bibbase.org/network/publication/jang-patted-gil-garijo-ratnakar-ji-wang-mcmahon-etal-towardsautomaticgenerationofportionsofscientificpapersforlargemultiinstitutionalcollaborationsbasedonsemanticmetadata-2017" target="_blank"><b>Towards Automatic Generation of Portions of Scientific Papers for Large Multi-Institutional CollaborationsBased on Semantic Metadata</b></a>
@@ -114,9 +120,7 @@ $(document).ready(function(){
         <a href="https://www.isi.edu/~gil/papers/jang-etal-semsci17.pdf" target="_blank"><p style="color:blue;">(PDF)</p></a>
     </p>
     <br />
-  </div>
 
-  <div class="w3-content w3-justify">
     <h3><b>2016</b><hr /></h3>
     <p>
         <a href="https://bibbase.org/network/publication/gil-garijo-ratnakar-mayani-adusumilli-boyce-mallick-automatedhypothesistestingwithlargescientificdatarepositories-2016" target="_blank"><b>Automated Hypothesis Testing with Large Scientific Data Repositories. </b></a>

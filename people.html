@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 <head>
   <style>
-    h2 {
+    h1 {
         color:goldenrod
     }
 
@@ -40,6 +40,16 @@ $(document).ready(function(){
       position: absolute;
       top: 8px;
       right: 16px;
+    }
+
+    .topleft {
+      position: absolute;
+      top: -3px;
+      left: 15px;
+    }
+
+    .w3-bar .w3-button {
+    padding: 16px;
     }
     
 
@@ -104,16 +114,17 @@ $(document).ready(function(){
 <body>
 
 <header class="w3-container w3-theme-d5 w3-padding" id="topMenu"> 
-    <div class="w3-container">
+     <div class="w3-container">
         <div class=" w3-container">
-            <h2><img src="images/Logo.png" alt="ENIGMA-DISK"/>
+        <div class="topleft">
+            <h1><img src="images/Logo.png" alt="ENIGMA-DISK" width=40px height=40px/>
                 ENIGMA-DISK
-            </h2>
-            <div class="topright">
-                <img src="images/usc.gif" alt="University of Southern California" width=100px height=100px/>
-              </div>
+            </h1>
         </div>
-    </div>  
+        <div class="topright">
+            <img src="images/usc.gif" alt="University of Southern California" width=50px height=50px/>
+        </div>
+    </div>
     
     <div class="w3-center">
         <div class="w3-bar w3-theme-d5">
@@ -128,7 +139,7 @@ $(document).ready(function(){
 
 <br />
 <div class="w3-center">
-    <h3><b>People</b></h3>
+    <h2><b>People</b></h2>
 </div>
 <br />
 
