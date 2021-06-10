@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang=en>
-<title>ENIGMA-DISK</title>
+<title>NeuroDISK</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
@@ -41,9 +41,7 @@ $(document).ready(function(){
     }
 
     .topleft {
-      position: absolute;
-      top: -3px;
-      left: 15px;
+      float: left;
     }
 
     .w3-bar .w3-button {
@@ -73,16 +71,17 @@ $(document).ready(function(){
     <div class="w3-container">
       <div class=" w3-container">
       <div class="topleft">
-          <h1><img src="images/Logo.png" alt="ENIGMA-DISK" width=40px height=40px/>
-              ENIGMA-DISK
+          <h1><img src="images/Logo.png" alt="NeuroDISK" width=50px height=50px/>
+            NeuroDISK
           </h1>
       </div>
-      <div class="topright">
-          <img src="images/usc.gif" alt="University of Southern California" width=50px height=50px/>
       </div>
+      <!--div class="topright">
+          <img src="images/usc.gif" alt="University of Southern California" width=80px height=80px/>
+      </div-->
   </div>
     
-    <div class="w3-center">
+    <div class="w3-right">
       <div class="w3-bar w3-theme-d5">
         <a href="index.html" class="w3-bar-item w3-button w3-padding-8">About</a>
         <a href="research.html" class="w3-bar-item w3-button w3-padding-8 selected">Research</a>
@@ -102,14 +101,16 @@ $(document).ready(function(){
   <div class="w3-content w3-justify">
     <p>
       <img src="images/overall.png" alt="Project Overall Concept" class="center" width=700px height=500px/><br />
-      Research detail here
+      Hypothesis testing and rigorous data analysis are significant for scientific discoveries. In our data-driven world, the generation of scientific data is continuous, however, the designed hypothesis is only tested once against its own cohort and may yield contradictory results when evaluated on different cohorts, and this is not uncommon in empirical sciences such as neuro sciences. To study the continuously available scientific data to its full potential, automated hypothesis testing is necessary. One of the challenges for automated hypothesis re-evaluation is the lack of an integrated system that can monitor and update the hypothesis testing with new data becoming available. <br /><br />
+      DISK (Automated DIscovery of Scientific Knowledge) is a novel framework to test and revise hypotheses based on automatic analysis of scientific data repositories that grow over time. Neuro-DISK extends DISK to the scope of neuroscience, by connecting to external knowledge bases, including available projects within ENIGMA (Enhancing Neuro Imaging Genetics through Meta-Analysis) consortium, a large international collaboration for neuro-imaging and genetics aiming to understand brain structure and function. <br /><br />
+      NeuroDISK is designed to test and revise hypotheses via automatic analysis of dynamic scientific data in neuroscience. In NeuroDISK, the user defines the hypothesis of interest through the DISK GUI, the hypothesis triggers a Lines of Inquiry (LOI) to search for appropriate data from the ENIGMA-ODS platform, the LOI workflows are then executed via WINGS, a semantic workflow system in which the steps and configuration of data processing by software components are specified. The execution results and the corresponding provenance trace are stored in a Linked Data repository and are explored by the associated meta-workflows included in the LOI, and the original hypothesis is revised, if necessary. <br /><br />
     </p>
   </div>
 
 
   <div class="footer">
     <hr />
-    <p>Copyright ENIGMA-DISK 2021 | University of Southern California</p>
+    <p>NeuroDISK 2021 Copyright &copy;| University of Southern California</p>
   </div>
 
 
