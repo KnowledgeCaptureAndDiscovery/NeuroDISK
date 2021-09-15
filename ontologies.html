@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang=en>
+<title>NeuroDISK</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-red.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118863115-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118863115-5');
+</script>
+
+<head>
+  <style>
+    h1 {
+      color:goldenrod
+    }
+
+    .w3-container {
+      position: relative;
+    }
+
+    .topleft {
+      float: left;
+    }
+
+    .w3-bar .w3-button {
+    padding: 16px;
+    }
+
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:white;
+      color:black;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="w3-container w3-theme-d5 w3-padding" id="topMenu"> 
+      <div class=" w3-container">
+      <div class=" w3-container">
+        <div class="topleft">
+          <h1><img src="images/Logo.png" alt="NeuroDISK" width=50px height=50px/>
+            NeuroDISK
+          </h1>
+        </div>
+        </div>
+    </div>  
+    
+    <div class="w3-right">
+      <div class="w3-bar w3-theme-d5">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-8">About</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-8">Research</a>
+        <a href="people.html" class="w3-bar-item w3-button w3-padding-8">People</a>
+        <a href="publications.html" class="w3-bar-item w3-button w3-padding-8">Publications</a>
+        <a href="ontologies.html" class="w3-bar-item w3-button w3-padding-8 selected">Ontologies</a>
+        <a href="portal.html" class="w3-bar-item w3-button w3-padding-8">Portal</a>
+        <a href="acknowledgements.html" class="w3-bar-item w3-button w3-padding-8">Acknowledgements</a>
+      </div>  
+    </div>
+  </header>
+
+  <br />
+  <div class="w3-center">
+    <h2><b>Enigma-DISK Ontologies Overview</b></h2>
+  </div>
+  <br />
+
+  <div class="w3-content w3-justify">
+    <p>
+      The DISK system implements the DISK ontology and imports several others.
+    </p>
+    <p>
+      The Enigma-DISK project contains both, the enigma ontologies, and disk ontologies. Several external ontologies are included and the generated vocabularies used on different extensions.
+    </p>
+
+    <img src="images/ontologies.png" alt="Ontologies Overview"/>
+
+    <p>
+      The diagram shows:
+      <ul>
+        <li><b>On blue:</b> External ontologies imported into DISK.</li>
+        <li><b>On green:</b> 
+          Enigma and DISK ontologies. Enigma ontologies provide definitions and context for applications such as semantic wikis. DISK ontologies define all necessary classes and properties for the utilization of the DISK framework.
+        </li>
+        <li><b>On purple:</b> 
+          Applications ontologies created with one or more Enigma-DISK ontologies such as the ones used on semantic wikis.
+        </li>
+      </ul>
+      You can read a detailed explanation of the ENIGMA ontologies on their <a href="https://knowledgecaptureanddiscovery.github.io/EnigmaOntology/release/" target="_blank">documentation page</a>.
+    </p>
+
+    <p>
+      The DISK ontologies aims to help scientists to test and discover new hypothesis from existing datasets. Scientists define lines of inquiry that represent generic research questions, like the proteins associated to a type of cancer. The lines of inquiry may have multiple hypothesis associated to them, which define a particular instance or aspect of the line of inquiry (e.g., the EGFR protein is associated to colon cancer). Each hypothesis is represented as a connected graph, where the nodes are the different terms that compose the hypothesis and the edges represent the relationships among those terms.
+    </p>
+
+    <p>
+      Each of the statements represented in the hypothesis graph can be supported by the results obtained after running an experiment. In fact, the hypothesis has a confidence value, which varies depending on the results of the experiments run to test it.
+    </p>
+
+    <p>
+      The main vocabularies of the DISK ontologies are:
+      <ul>
+        <li><b>Disk vocabulary:</b> 
+          The <a target="_blank" href="https://disk-project.org/ontology/disk/index-en.html">Disk vocabulary</a> introduces the terms for creating hypothesis graphs and associate them to different lines of inquiry and executions.
+        </li>
+        <li><b>Hypothesis vocabulary:</b> 
+          The <a target="_blank" href="https://disk-project.org/ontology/hypothesis/index-en.html">hypothesis vocabulary</a> introduces a set of terms and properties for linking the terms included in a hypothesis graph.
+        </li>
+        <li><b>Question vocabulary:</b> 
+          The <a target="_blank" href="#">question vocabulary</a> introduces terms and properties for creating question templates and patterns that helps users on the creation of hypothesis graph.
+        </li>
+      </ul>
+    </p>
+  </div>
+
+
+  <div class="footer">
+    <hr />
+    <p>NeuroDISK 2021 Copyright &copy;| University of Southern California</p>
+  </div>
+
+
+</body>
+
+</html>
