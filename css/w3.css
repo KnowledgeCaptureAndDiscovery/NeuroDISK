@@ -233,3 +233,17 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 background-color:#909090 ;
 }
 footer{box-shadow:0 50vh 0 50vh #c2c4c5;}
+.img-center {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-description {
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
+}
+.w3-container.w3-center .container-description h2 {
+    font-size: 1.8em;
+}
